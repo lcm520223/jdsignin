@@ -8,9 +8,9 @@ const rp = require('request-promise');
 const download = require('download');
 
 // 公共变量
-const KEY = 'pt_key=AAJf5tVgADBk3YhILjYcT4dZANfkfh47zzkEvoVtqIxMQzIEf73MCUxE9pAa2sbUlj3x4GdFoqU;pt_pin=jd_7814350d63880';
-const serverJ = 'SCU117482Tc0cff950b3080790d12a48c1a8d12e855f813e068fef2';
-const DualKey = 'pt_key=AAJf5tVgADBk3YhILjYcT4dZANfkfh47zzkEvoVtqIxMQzIEf73MCUxE9pAa2sbUlj3x4GdFoqU;pt_pin=jd_7814350d63880';
+const KEY = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e';
+const serverJ = 'SCU139511Tc6ea61e4cde1525b22516073d5a5ffb15fe73282204b7';
+const DualKey = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e';
 
 
 async function downFile() {

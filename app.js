@@ -8,9 +8,9 @@ const rp = require('request-promise');
 const download = require('download');
 
 // 公共变量
-const KEY = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e';
+const KEY = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e;';
 const serverJ = 'SCU139511Tc6ea61e4cde1525b22516073d5a5ffb15fe73282204b7';
-const DualKey = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e';
+const DualKey = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e;';
 
 
 async function downFile() {
@@ -42,6 +42,47 @@ async function downFile() {
   const syj = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js';
   const ds = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js';
   const unsubscribe = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js';
+  const JD_extra_cookie = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js';
+  const jdDreamFactoryShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdDreamFactoryShareCodes.js';
+  const jdFactoryShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdFactoryShareCodes.js';
+  const jdFruitShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdFruitShareCodes.js';
+  const jdPetShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdPetShareCodes.js';
+  const jdPlantBeanShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdPlantBeanShareCodes.js';
+  const jdSuperMarketShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdSuperMarketShareCodes.js';
+  const jd_bean_home = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js';
+  const jd_bean_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_sign.js';
+  const jd_car = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js';
+  const jd_crazy_joy_coin = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy_coin.js';
+  const jd_health = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js';
+  const jd_jdh = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js';
+  const jd_jdzz = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js';
+  const jd_joy_help = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_help.js';
+  const jd_live = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js';
+  const jd_live_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js';
+  const jd_lotteryMachine = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_lotteryMachine.js';
+  const jd_ms_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js';
+  const jd_petTreasureBox = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js';
+  const jd_rankingList = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js';
+  const jd_unbind = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unbind.js';
+  const jd_watch = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js';
+  const jr_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jr_sign.js';
+  const lxk0301 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/lxk0301.boxjs.json';
+  const test2 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/test2.js';
+
+  const jd_818 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_818.js';
+  const jd_apple_live = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_apple_live.js';
+  const jd_collectProduceScore = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_collectProduceScore.js';
+  const jd_digital_floor = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_digital_floor.js';
+  const jd_jxstory = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_jxstory.js';
+  const jd_live_redrain2 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_live_redrain2.js';
+  const jd_mohe = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_mohe.js';
+  const jd_pubg = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_pubg.js';
+  const jd_split = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_split.js';
+  const jd_xtg = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_xtg.js';
+
+
+
+  
   
   await download(url, './');
   await download(crazy_joy, './');
@@ -70,6 +111,44 @@ async function downFile() {
   await download(syj, './');
   await download(ds, './');
   await download(unsubscribe, './');
+  await download(JD_extra_cookie, './');
+  await download(jdDreamFactoryShareCodes, './');
+  await download(jdFactoryShareCodes, './');
+  await download(jdFruitShareCodes, './');
+  await download(jdPetShareCodes, './');
+  await download(jdPlantBeanShareCodes, './');
+  await download(jdSuperMarketShareCodes, './');
+  await download(jd_bean_home, './');
+  await download(jd_bean_sign, './');
+  await download(jd_car, './');
+  await download(jd_crazy_joy_coin, './');
+  await download(jd_health, './');
+  await download(jd_jdh, './');
+  await download(jd_jdzz, './');
+  await download(jd_joy_help, './');
+  await download(jd_live, './');
+  await download(jd_live_redrain, './');
+  await download(jd_lotteryMachine, './');
+  await download(jd_ms_redrain, './');
+  await download(jd_petTreasureBox, './');
+  await download(jd_rankingList, './');
+  await download(jd_unbind, './');
+  await download(jd_watch, './');
+  await download(jr_sign, './');
+  await download(lxk0301, './');
+  await download(test2, './');
+
+
+  await download(jd_818, './activity/');
+  await download(jd_apple_live, './activity/');
+  await download(jd_collectProduceScore, './activity/');
+  await download(jd_digital_floor, './activity/');
+  await download(jd_jxstory, './activity/');
+  await download(jd_live_redrain2, './activity/');
+  await download(jd_mohe, './activity/');
+  await download(jd_pubg, './activity/');
+  await download(jd_split, './activity/');
+  await download(jd_xtg, './activity/');
 }
 
 async function changeFile() {

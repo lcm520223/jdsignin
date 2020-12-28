@@ -8,9 +8,9 @@ const rp = require('request-promise');
 const download = require('download');
 
 // 公共变量
-const KEY = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e;';
-const serverJ = 'SCU139511Tc6ea61e4cde1525b22516073d5a5ffb15fe73282204b7';
-const DualKey = 'pt_key=AAJf5zMGADA46qAwquR5TngO0lZy6TEwPmYmGDSzbR484S-KG4d8Bd215LLtPG7CqHep60DySP8;pt_pin=jd_557c0efbeb65e;';
+const KEY = process.env.JD_COOKIE;
+const serverJ = process.env.PUSH_KEY;
+const DualKey = '';
 
 
 async function downFile() {
@@ -183,10 +183,11 @@ async function start() {
   await downFile();
   console.log('下载代码完毕')
   // 替换变量
-  await changeFile();
-  console.log('替换变量完毕')
+  //await changeFile();
+  //console.log('替换变量完毕')
   // 执行
-  await exec("node JD_DailyBonus.js >> result.txt");
+  //await exec("node JD_DailyBonus.js >> result.txt");
+  await exec("node jd_bean_sign.js >> result.txt");
   await exec("node jd_crazy_joy.js >> result.txt");
   await exec("node jd_blueCoin.js >> result.txt");
   await exec("node jd_club_lottery.js >> result.txt");

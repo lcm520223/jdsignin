@@ -214,7 +214,7 @@ async function start() {
   await exec("node jd_syj.js >> result.txt");
   await exec("node jd_ds.js >> result.txt");
   await exec("node jd_unsubscribe.js >> result.txt");
-  await exec("node jd_crazy_joy_coin.js >> result.txt");
+  //await exec("node jd_crazy_joy_coin.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

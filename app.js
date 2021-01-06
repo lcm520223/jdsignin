@@ -212,6 +212,9 @@ async function start() {
   await exec("node jd_unsubscribe.js >> result.txt");
   await exec("node jd_lotteryMachine.js >> result.txt");
   //await exec("node jd_crazy_joy_coin.js >> result.txt");
+  await exec("node jd_car.js >> result.txt");
+  await exec("node jd_jdzz.js >> result.txt");
+  await exec("node jd_live.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

@@ -215,6 +215,7 @@ async function start() {
   await exec("node jd_car.js >> result.txt");
   await exec("node jd_jdzz.js >> result.txt");
   await exec("node jd_live.js >> result.txt");
+  await exec("node jd_rankingList.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

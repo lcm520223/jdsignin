@@ -1,7 +1,3 @@
-// version v0.0.2
-// create by ruicky
-// detail url: https://github.com/ruicky/jd_sign_bot
-
 const exec = require('child_process').execSync;
 const fs = require('fs');
 const rp = require('request-promise');
@@ -10,7 +6,6 @@ const download = require('download');
 // 公共变量
 const KEY = process.env.JD_COOKIE;
 const serverJ = process.env.PUSH_KEY;
-const DualKey = '';
 
 
 async function downFile() {
@@ -40,7 +35,7 @@ async function downFile() {
   const small_home = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_small_home.js';
   const necklace = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js';
   const syj = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js';
-  const ds = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js';
+  //const ds = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js';
   const unsubscribe = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js';
   const JD_extra_cookie = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js';
   const jdDreamFactoryShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdDreamFactoryShareCodes.js';
@@ -54,18 +49,18 @@ async function downFile() {
   const jd_car = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js';
   const jd_crazy_joy_coin = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy_coin.js';
   const jd_health = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js';
-  const jd_jdh = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js';
+  //const jd_jdh = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js';
   const jd_jdzz = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js';
   const jd_joy_help = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_help.js';
   const jd_live = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js';
-  const jd_live_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js';
+  //const jd_live_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js';
   const jd_lotteryMachine = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_lotteryMachine.js';
-  const jd_ms_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js';
+  //const jd_ms_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js';
   const jd_petTreasureBox = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js';
   const jd_rankingList = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js';
   const jd_unbind = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unbind.js';
-  const jd_watch = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js';
-  const jr_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jr_sign.js';
+  //const jd_watch = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js';
+  //const jr_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jr_sign.js';
   const lxk0301 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/lxk0301.boxjs.json';
   const test2 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/test2.js';
 
@@ -109,7 +104,7 @@ async function downFile() {
   await download(small_home, './');
   await download(necklace, './');
   await download(syj, './');
-  await download(ds, './');
+  //await download(ds, './');
   await download(unsubscribe, './');
   await download(JD_extra_cookie, './');
   await download(jdDreamFactoryShareCodes, './');
@@ -123,18 +118,18 @@ async function downFile() {
   await download(jd_car, './');
   await download(jd_crazy_joy_coin, './');
   await download(jd_health, './');
-  await download(jd_jdh, './');
+  //await download(jd_jdh, './');
   await download(jd_jdzz, './');
   await download(jd_joy_help, './');
   await download(jd_live, './');
-  await download(jd_live_redrain, './');
+  //await download(jd_live_redrain, './');
   await download(jd_lotteryMachine, './');
-  await download(jd_ms_redrain, './');
+  //await download(jd_ms_redrain, './');
   await download(jd_petTreasureBox, './');
   await download(jd_rankingList, './');
   await download(jd_unbind, './');
-  await download(jd_watch, './');
-  await download(jr_sign, './');
+  //await download(jd_watch, './');
+  //await download(jr_sign, './');
   await download(lxk0301, './');
   await download(test2, './');
 
@@ -152,12 +147,13 @@ async function downFile() {
 }
 
 async function changeFile() {
-  let content = await fs.readFileSync('./JD_DailyBonus.js', 'utf8')
-  content = content.replace(/var Key = ''/, `var Key = '${KEY}'`);
-  if (DualKey) {
-    content = content.replace(/var DualKey = ''/, `var DualKey = '${DualKey}'`);
-  }
-  await fs.writeFileSync('./JD_DailyBonus.js', content, 'utf8')
+  let content = await fs.readFileSync('./jdCookie.js', 'utf8')
+  content = content.replace(/let CookieJDs = []/, `let CookieJDs = [${KEY}]`);
+  await fs.writeFileSync('./jdCookie.js', content, 'utf8')
+
+  let content2 = await fs.readFileSync('./sendNotify.js', 'utf8')
+  content2 = content2.replace(/let SCKEY = '';/, `let SCKEY = '${serverJ}';`);
+  await fs.writeFileSync('./sendNotify.js', content2, 'utf8')
 }
 
 async function sendNotify(text, desp) {
@@ -212,8 +208,9 @@ async function start() {
   await exec("node jd_small_home.js >> result.txt");
   await exec("node jd_necklace.js >> result.txt");
   await exec("node jd_syj.js >> result.txt");
-  await exec("node jd_ds.js >> result.txt");
+  //await exec("node jd_ds.js >> result.txt");
   await exec("node jd_unsubscribe.js >> result.txt");
+  await exec("node jd_lotteryMachine.js >> result.txt");
   //await exec("node jd_crazy_joy_coin.js >> result.txt");
   console.log('执行完毕')
 

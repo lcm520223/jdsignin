@@ -48,7 +48,7 @@ async function downFile() {
   const jd_bean_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_sign.js';
   const jd_car = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js';
   const jd_crazy_joy_coin = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy_coin.js';
-  const jd_health = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js';
+  //const jd_health = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js';
   //const jd_jdh = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js';
   const jd_jdzz = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js';
   const jd_joy_help = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_help.js';
@@ -79,71 +79,82 @@ async function downFile() {
 
   
   
-  await download(url, './');
-  await download(crazy_joy, './');
-  await download(blue_coin, './');
-  await download(club_lottery, './');
-  await download(fruit, './');
-  await download(joy, './');
-  await download(feedpet, './');
-  await download(reward, './');
-  await download(joy_run, './');
-  await download(joy_steal, './');
-  await download(moneyTree, './');
-  await download(pet, './');
-  await download(pigpet, './');
-  await download(dailyegg, './');
-  await download(plantBean, './');
-  await download(redPacket, './');
-  await download(shop, './');
-  await download(speed, './');
-  await download(kd, './');
-  await download(superMarket, './');
-  await download(dreamFactory, './');
-  await download(jdFactory, './');
-  await download(small_home, './');
-  await download(necklace, './');
-  await download(syj, './');
-  //await download(ds, './');
-  await download(unsubscribe, './');
-  await download(JD_extra_cookie, './');
-  await download(jdDreamFactoryShareCodes, './');
-  await download(jdFactoryShareCodes, './');
-  await download(jdFruitShareCodes, './');
-  await download(jdPetShareCodes, './');
-  await download(jdPlantBeanShareCodes, './');
-  await download(jdSuperMarketShareCodes, './');
-  await download(jd_bean_home, './');
-  await download(jd_bean_sign, './');
-  await download(jd_car, './');
-  await download(jd_crazy_joy_coin, './');
-  await download(jd_health, './');
-  //await download(jd_jdh, './');
-  await download(jd_jdzz, './');
-  await download(jd_joy_help, './');
-  await download(jd_live, './');
-  //await download(jd_live_redrain, './');
-  await download(jd_lotteryMachine, './');
-  //await download(jd_ms_redrain, './');
-  await download(jd_petTreasureBox, './');
-  await download(jd_rankingList, './');
-  await download(jd_unbind, './');
-  //await download(jd_watch, './');
-  //await download(jr_sign, './');
-  await download(lxk0301, './');
-  await download(test2, './');
+  await down(download(url, './'),'url');
+  await down(download(crazy_joy, './'),'crazy_joy');
+  await down(download(blue_coin, './'),'blue_coin');
+  await down(download(club_lottery, './'),'club_lottery');
+  await down(download(fruit, './'),'fruit');
+  await down(download(joy, './'),'joy');
+  await down(download(feedpet, './'),'feedpet');
+  await down(download(reward, './'),'reward');
+  await down(download(joy_run, './'),'joy_run');
+  await down(download(joy_steal, './'),'joy_steal');
+  await down(download(moneyTree, './'),'moneyTree');
+  await down(download(pet, './'),'pet');
+  await down(download(pigpet, './'),'pigpet');
+  await down(download(dailyegg, './'),'dailyegg');
+  await down(download(plantBean, './'),'plantBean');
+  await down(download(redPacket, './'),'redPacket');
+  await down(download(shop, './'),'shop');
+  await down(download(speed, './'),'speed');
+  await down(download(kd, './'),'kd');
+  await down(download(superMarket, './'),'superMarket');
+  await down(download(dreamFactory, './'),'dreamFactory');
+  await down(download(jdFactory, './'),'jdFactory');
+  await down(download(small_home, './'),'small_home');
+  await down(download(necklace, './'),'necklace');
+  await down(download(syj, './'),'syj');
+  //await down(download(ds, './'));
+  await down(download(unsubscribe, './'),'unsubscribe');
+  await down(download(JD_extra_cookie, './'),'JD_extra_cookie');
+  await down(download(jdDreamFactoryShareCodes, './'),'jdDreamFactoryShareCodes');
+  await down(download(jdFactoryShareCodes, './'),'jdFactoryShareCodes');
+  await down(download(jdFruitShareCodes, './'),'jdFruitShareCodes');
+  await down(download(jdPetShareCodes, './'),'jdPetShareCodes');
+  await down(download(jdPlantBeanShareCodes, './'),'jdPlantBeanShareCodes');
+  await down(download(jdSuperMarketShareCodes, './'),'jdSuperMarketShareCodes');
+  await down(download(jd_bean_home, './'),'jd_bean_home');
+  await down(download(jd_bean_sign, './'),'jd_bean_sign');
+  await down(download(jd_car, './'),'jd_car');
+  await down(download(jd_crazy_joy_coin, './'),'jd_crazy_joy_coin');
+  //await down(download(jd_health, './'));
+  //await down(download(jd_jdh, './'));
+  await down(download(jd_jdzz, './'),'jd_jdzz');
+  await down(download(jd_joy_help, './'),'jd_joy_help');
+  await down(download(jd_live, './'),'jd_live');
+  //await down(download(jd_live_redrain, './'));
+  await down(download(jd_lotteryMachine, './'),'jd_lotteryMachine');
+  //await down(download(jd_ms_redrain, './'));
+  await down(download(jd_petTreasureBox, './'),'jd_petTreasureBox');
+  await down(download(jd_rankingList, './'),'jd_rankingList');
+  await down(download(jd_unbind, './'),'jd_unbind');
+  //await down(download(jd_watch, './'));
+  //await down(download(jr_sign, './'));
+  await down(download(lxk0301, './'),'lxk0301');
+  await down(download(test2, './'),'test2');
 
 
-  await download(jd_818, './activity/');
-  await download(jd_apple_live, './activity/');
-  await download(jd_collectProduceScore, './activity/');
-  await download(jd_digital_floor, './activity/');
-  await download(jd_jxstory, './activity/');
-  await download(jd_live_redrain2, './activity/');
-  await download(jd_mohe, './activity/');
-  await download(jd_pubg, './activity/');
-  await download(jd_split, './activity/');
-  await download(jd_xtg, './activity/');
+  await down(download(jd_818, './activity/'),'jd_818');
+  await down(download(jd_apple_live, './activity/'),'jd_apple_live');
+  await down(download(jd_collectProduceScore, './activity/'),'jd_collectProduceScore');
+  await down(download(jd_digital_floor, './activity/'),'jd_digital_floor');
+  await down(download(jd_jxstory, './activity/'),'jd_jxstory');
+  await down(download(jd_live_redrain2, './activity/'),'jd_live_redrain2');
+  await down(download(jd_mohe, './activity/'),'jd_mohe');
+  await down(download(jd_pubg, './activity/'),'jd_pubg');
+  await down(download(jd_split, './activity/'),'jd_split');
+  await down(download(jd_xtg, './activity/'),'jd_xtg');
+}
+
+async function down(downfun,jsname){
+  try
+  {
+    await downfun;
+  }
+  catch
+  {
+    await sendNotify('下载出错','有文件下载出错，请及时处理'+jsname);
+  }
 }
 
 async function changeFile() {
@@ -211,11 +222,11 @@ async function start() {
   //await exec("node jd_ds.js >> result.txt");
   await exec("node jd_unsubscribe.js >> result.txt");
   await exec("node jd_lotteryMachine.js >> result.txt");
-  //await exec("node jd_crazy_joy_coin.js >> result.txt");
   await exec("node jd_car.js >> result.txt");
   await exec("node jd_jdzz.js >> result.txt");
   await exec("node jd_live.js >> result.txt");
   await exec("node jd_rankingList.js >> result.txt");
+  //await exec("node jd_crazy_joy_coin.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

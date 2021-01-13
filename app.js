@@ -9,7 +9,6 @@ const serverJ = process.env.PUSH_KEY;
 
 
 async function downFile() {
-  // const url = 'https://cdn.jsdelivr.net/gh/NobyDa/Script@master/JD-DailyBonus/JD_DailyBonus.js'
   const url = 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js';
   const crazy_joy = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy.js';
   const blue_coin = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js';
@@ -35,45 +34,27 @@ async function downFile() {
   const small_home = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_small_home.js';
   const necklace = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js';
   const syj = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js';
-  //const ds = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js';
   const unsubscribe = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js';
   const JD_extra_cookie = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js';
-  const jdDreamFactoryShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdDreamFactoryShareCodes.js';
-  const jdFactoryShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdFactoryShareCodes.js';
-  const jdFruitShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdFruitShareCodes.js';
-  const jdPetShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdPetShareCodes.js';
-  const jdPlantBeanShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdPlantBeanShareCodes.js';
-  const jdSuperMarketShareCodes = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jdSuperMarketShareCodes.js';
   const jd_bean_home = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js';
   const jd_bean_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_sign.js';
   const jd_car = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js';
   const jd_crazy_joy_coin = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy_coin.js';
-  //const jd_health = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js';
-  //const jd_jdh = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js';
   const jd_jdzz = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js';
   const jd_joy_help = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_help.js';
   const jd_live = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js';
-  //const jd_live_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js';
   const jd_lotteryMachine = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_lotteryMachine.js';
-  //const jd_ms_redrain = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js';
   const jd_petTreasureBox = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js';
   const jd_rankingList = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js';
   const jd_unbind = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unbind.js';
-  //const jd_watch = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js';
-  //const jr_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jr_sign.js';
-  const lxk0301 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/lxk0301.boxjs.json';
-  const test2 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/test2.js';
+  const lxk0301 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/lxk0301.boxjs.json'
 
-  const jd_818 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_818.js';
-  const jd_apple_live = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_apple_live.js';
-  const jd_collectProduceScore = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_collectProduceScore.js';
-  const jd_digital_floor = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_digital_floor.js';
-  const jd_jxstory = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_jxstory.js';
-  const jd_live_redrain2 = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_live_redrain2.js';
-  const jd_mohe = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_mohe.js';
-  const jd_pubg = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_pubg.js';
-  const jd_split = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_split.js';
-  const jd_xtg = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/activity/jd_xtg.js';
+  const jd_bookshop = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bookshop.js';
+  const jd_car_exchange = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car_exchange.js';
+  const jd_cash = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_cash.js';
+  const jd_jxnc = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jxnc.js';
+  const jx_sign = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jx_sign.js';
+  const USER_AGENTS = 'https://raw.githubusercontent.com/lxk0301/jd_scripts/master/USER_AGENTS.js';
 
 
 
@@ -104,46 +85,27 @@ async function downFile() {
   await down(download(small_home, './'),'small_home');
   await down(download(necklace, './'),'necklace');
   await down(download(syj, './'),'syj');
-  //await down(download(ds, './'));
   await down(download(unsubscribe, './'),'unsubscribe');
   await down(download(JD_extra_cookie, './'),'JD_extra_cookie');
-  await down(download(jdDreamFactoryShareCodes, './'),'jdDreamFactoryShareCodes');
-  await down(download(jdFactoryShareCodes, './'),'jdFactoryShareCodes');
-  await down(download(jdFruitShareCodes, './'),'jdFruitShareCodes');
-  await down(download(jdPetShareCodes, './'),'jdPetShareCodes');
-  await down(download(jdPlantBeanShareCodes, './'),'jdPlantBeanShareCodes');
-  await down(download(jdSuperMarketShareCodes, './'),'jdSuperMarketShareCodes');
   await down(download(jd_bean_home, './'),'jd_bean_home');
   await down(download(jd_bean_sign, './'),'jd_bean_sign');
   await down(download(jd_car, './'),'jd_car');
   await down(download(jd_crazy_joy_coin, './'),'jd_crazy_joy_coin');
-  //await down(download(jd_health, './'));
-  //await down(download(jd_jdh, './'));
   await down(download(jd_jdzz, './'),'jd_jdzz');
   await down(download(jd_joy_help, './'),'jd_joy_help');
   await down(download(jd_live, './'),'jd_live');
-  //await down(download(jd_live_redrain, './'));
   await down(download(jd_lotteryMachine, './'),'jd_lotteryMachine');
-  //await down(download(jd_ms_redrain, './'));
   await down(download(jd_petTreasureBox, './'),'jd_petTreasureBox');
   await down(download(jd_rankingList, './'),'jd_rankingList');
   await down(download(jd_unbind, './'),'jd_unbind');
-  //await down(download(jd_watch, './'));
-  //await down(download(jr_sign, './'));
   await down(download(lxk0301, './'),'lxk0301');
-  await down(download(test2, './'),'test2');
 
-
-  await down(download(jd_818, './activity/'),'jd_818');
-  await down(download(jd_apple_live, './activity/'),'jd_apple_live');
-  await down(download(jd_collectProduceScore, './activity/'),'jd_collectProduceScore');
-  await down(download(jd_digital_floor, './activity/'),'jd_digital_floor');
-  await down(download(jd_jxstory, './activity/'),'jd_jxstory');
-  await down(download(jd_live_redrain2, './activity/'),'jd_live_redrain2');
-  await down(download(jd_mohe, './activity/'),'jd_mohe');
-  await down(download(jd_pubg, './activity/'),'jd_pubg');
-  await down(download(jd_split, './activity/'),'jd_split');
-  await down(download(jd_xtg, './activity/'),'jd_xtg');
+  await down(download(jd_bookshop, './'),'jd_bookshop');
+  await down(download(jd_car_exchange, './'),'jd_car_exchange');
+  await down(download(jd_cash, './'),'jd_cash');
+  await down(download(jd_jxnc, './'),'jd_jxnc');
+  await down(download(jx_sign, './'),'jx_sign');
+  await down(download(USER_AGENTS, './'),'USER_AGENTS');
 }
 
 async function down(downfun,jsname){
@@ -219,14 +181,18 @@ async function start() {
   await exec("node jd_small_home.js >> result.txt");
   await exec("node jd_necklace.js >> result.txt");
   await exec("node jd_syj.js >> result.txt");
-  //await exec("node jd_ds.js >> result.txt");
   await exec("node jd_unsubscribe.js >> result.txt");
   await exec("node jd_lotteryMachine.js >> result.txt");
   await exec("node jd_car.js >> result.txt");
   await exec("node jd_jdzz.js >> result.txt");
   await exec("node jd_live.js >> result.txt");
   await exec("node jd_rankingList.js >> result.txt");
-  //await exec("node jd_crazy_joy_coin.js >> result.txt");
+
+  await exec("node jd_bookshop.js >> result.txt");
+  await exec("node jd_car_exchange.js >> result.txt");
+  await exec("node jd_cash.js >> result.txt");
+  await exec("node jd_jxnc.js >> result.txt");
+  await exec("node jx_sign.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

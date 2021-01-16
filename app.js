@@ -47,6 +47,7 @@ async function downFile() {
   const jd_petTreasureBox = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_petTreasureBox.js';
   const jd_rankingList = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_rankingList.js';
   const jd_unbind = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_unbind.js';
+  const jd_family = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_family.js';
   const lxk0301 = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/lxk0301.boxjs.json'
 
   const jd_bookshop = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_bookshop.js';
@@ -55,6 +56,7 @@ async function downFile() {
   const jd_jxnc = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_jxnc.js';
   const jx_sign = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jx_sign.js';
   const USER_AGENTS = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/USER_AGENTS.js';
+  const jd_nh = 'https://raw.githubusercontent.com/DoveBoy/jd_scripts/master/jd_nh.js';
 
 
 
@@ -99,6 +101,7 @@ async function downFile() {
   await down(download(jd_rankingList, './'),'jd_rankingList');
   await down(download(jd_unbind, './'),'jd_unbind');
   await down(download(lxk0301, './'),'lxk0301');
+  await down(download(jd_family, './'),'jd_family');
 
   await down(download(jd_bookshop, './'),'jd_bookshop');
   await down(download(jd_car_exchange, './'),'jd_car_exchange');
@@ -106,6 +109,7 @@ async function downFile() {
   await down(download(jd_jxnc, './'),'jd_jxnc');
   await down(download(jx_sign, './'),'jx_sign');
   await down(download(USER_AGENTS, './'),'USER_AGENTS');
+  await down(download(jd_nh, './'),'jd_nh');
 }
 
 async function down(downfun,jsname){
@@ -193,6 +197,8 @@ async function start() {
   await exec("node jd_cash.js >> result.txt");
   await exec("node jd_jxnc.js >> result.txt");
   await exec("node jx_sign.js >> result.txt");
+  await exec("node jd_family.js >> result.txt");
+  await exec("node jd_nh.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {

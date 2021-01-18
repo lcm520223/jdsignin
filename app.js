@@ -199,6 +199,7 @@ async function start() {
   await exec("node jx_sign.js >> result.txt");
   await exec("node jd_family.js >> result.txt");
   await exec("node jd_nh.js >> result.txt");
+  await exec("node jd_bean_home.js >> result.txt");
   console.log('执行完毕')
 
   if (serverJ) {
